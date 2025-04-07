@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00ffff;
+}
+
+.header {
+    display: flex;
+    justify-content: column; /* Place l'image et le texte à gauche */
+    align-items: center; /* Aligne verticalement l'image et le texte */
+    padding: 20px;
+}
+
+.header img {
+    margin-right: 20px; /* Marge à droite de l'image pour espacer le texte */
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Aligne verticalement le texte */
+    flex-direction: column; /* Empile l'image et le texte verticalement */
+}
+
+.texte {
+    font-size: 26px;
+    margin: 0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column; /* Empile les sections verticalement */
+    align-items: flex-start; /* Aligne les sections à droite */
+    margin-top: -300px; /* Ajuste l'écart entre l'en-tête et les sections */
+    padding-right: 50px; /* Ajoute un peu de marge à droite */
+}
+
+.top-right {
+    margin-bottom: 20px; /* Marge entre les sections */
+    margin-right: 80px; /* Marge à droite de la section */
+    padding-right: 80px; /* Ajoute un peu de marge à droite */
+}
+
+h2 {
+    margin: 20px; /* Retire la marge par défaut des titres */
+}
+
+/* Décalage des sections */
+.top-right:nth-child(1) {
+    margin-left: 1000px; /* "Mes expériences" décalé à droite */
+    margin-top: -150px; /* Ajuste la position de la section */
+}
+
+.top-right:nth-child(2) {
+    margin-left: 1500px; /* "Mes compétences" décalé moins à droite */
+}
+
+.top-right:nth-child(3) {
+    margin-left: 1200px; /* "Mes formations" un peu plus centré */
+    margin-top: 150px;
+}
+.top-right:nth-child(4) {
+    position: absolute; /* Position absolue pour le footer */
+    top: 380px; /* Ajuste la position du footer */
+    left: 70%; /* Centre le footer horizontalement */ 
+    transform: translateX(-80%); /* Centre le footer horizontalement */  
+}
+footer p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+footer {
+    position: absolute;
+    top: 840px;
+    left: -370px;
+    transform: translateX(100%);
+}
+.highlight {
+    text-decoration: underline; /* Souligne le texte */
+    font-weight: bold; /* Met le texte en gras */
+}
+@media (max-width: 600px) {
+    .top-right {
+        width: 100%; /* Prend toute la largeur de l'écran */
+    }
+}
